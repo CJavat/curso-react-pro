@@ -5,7 +5,7 @@ import '../styles/styles.css';
 export const FormikComponents = () => {
 
   return (
-    <div className="">
+    <div>
       <h1>Formik Components</h1>
 
       <Formik

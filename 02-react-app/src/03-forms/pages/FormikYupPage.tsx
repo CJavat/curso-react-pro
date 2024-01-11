@@ -26,7 +26,7 @@ export const FormikYupPage = () => {
   });
 
   return (
-    <div className="">
+    <div>
       <h1>Formik Yup</h1>
 
       <form noValidate onSubmit={ handleSubmit }>
