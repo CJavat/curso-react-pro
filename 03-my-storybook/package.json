@@ -1,0 +1,67 @@
+{
+  "name": "dp-custom-components",
+  "private": false,
+  "version": "0.0.1-rc4",
+  "type": "module",
+  "main": "dis/index.js",
+  "typings": "dist/index.d.ts",
+  "keywords": [
+    "react",
+    "dev",
+    "daniel",
+    "curso"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/CJavat",
+  "repository": {
+    "url": "https://github.com/CJavat",
+    "type": "git"
+  },
+  "files": [
+    "dist/"
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "scripts": {
+    "dev": "npm run storybook",
+    "build": "rimraf dist/ && tsc && npm run copyfiles",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "clean": "rimraf dist/",
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.8",
+    "@storybook/addon-interactions": "^7.6.8",
+    "@storybook/addon-links": "^7.6.8",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.8",
+    "@storybook/react": "^7.6.8",
+    "@storybook/react-vite": "^7.6.8",
+    "@storybook/test": "^7.6.8",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-storybook": "^0.6.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "storybook": "^7.6.8",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  }
+}
